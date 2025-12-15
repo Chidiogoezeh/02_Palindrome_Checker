@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome Checker</title>
-</head>
+    <title>Robust Palindrome Checker</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <h1>Palindrome Checker</h1>
-    <input id="input" type="text" placeholder="Type something"/>
-    <button onclick="check()">Check</button>
+    <main class="container">
+        <h1>Palindrome Checker</h1>
+        
+        <form id="palindrome-form">
+            <label for="input-text">Enter text to check:</label>
+            <input id="input-text" type="text" placeholder="Type something, e.g., 'Racecar' or 'Madam, I'm Adam'" required />
+            <button type="submit">Check Palindrome</button>
+        </form>
 
-    <script src="/index.js"></script>
+        <div id="result-container">
+            <p id="result-message"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
